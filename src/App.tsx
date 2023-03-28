@@ -6,6 +6,7 @@ import { Footer } from './footer';
 import QueueElement from './components/queue/queue';
 import HashTable from './components/hash-table/hash-table';
 import BinaryTree from './components/binary-tree/binary-tree';
+import LongestSubstring from './components/longest-substring/longest-substring';
 
 // const decrement = (fn: Function) => (x: number) => fn(x);
 function decrement(fn: Function) {
@@ -70,25 +71,29 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h2>Vite + React</h2>
-      <p>{render.current}</p>
-      <p>{hamming(count)}</p>
-      <p>一共{elapsedTime.current}</p>
-      <textarea value={text} onChange={(evt) => setText(evt.target.value)} />
-      <p>Count: {count}</p>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is not {decrementSquare(count)}
-        </button>
-        <button onClick={() => setCount((count) => count + 300000)}>
-          increase count by 300000
-        </button>
-        <button onClick={() => setCount(5000000)}>
-          set count to high
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div style={{display: "flex"}}>
+        <div>
+          <h2>Vite + React</h2>
+          <p>{render.current}</p>
+          <p>{hamming(count)}</p>
+          <p>一共{elapsedTime.current}</p>
+          <textarea value={text} onChange={(evt) => setText(evt.target.value)} />
+          <p>Count: {count}</p>
+          <div className="card">
+            <button onClick={() => setCount((count) => count + 1)}>
+              count is not {decrementSquare(count)}
+            </button>
+            <button onClick={() => setCount((count) => count + 300000)}>
+              increase count by 300000
+            </button>
+            <button onClick={() => setCount(5000000)}>
+              set count to high
+            </button>
+          </div>
+        </div>
+        <div>
+          <LongestSubstring />
+        </div>
       </div>
         <QueueElement />
         <HashTable />
