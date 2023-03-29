@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import usePriorityQueue from "../../hooks/use-priority-queue";
-import { findRelativeMedals } from "../../utils/tmp";
 
 export default function PriorityQueue () {
     const [value, setValue] = useState<string>('');
