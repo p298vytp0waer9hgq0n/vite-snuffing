@@ -1,4 +1,4 @@
-import useQueue from "../../hooks/useQueue";
+import useQueue from "../../hooks/use-queue";
 
 interface INode<T> {
     value: T;

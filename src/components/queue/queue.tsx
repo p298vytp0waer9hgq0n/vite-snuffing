@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useQueue from "../../hooks/useQueue";
+import useQueue from "../../hooks/use-queue";
 
 export default function QueueElement () {
     const [number, setNumber] = useState<number | null>();

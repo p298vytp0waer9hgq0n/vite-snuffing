@@ -7,6 +7,7 @@ import QueueElement from './components/queue/queue';
 import HashTable from './components/hash-table/hash-table';
 import BinaryTree from './components/binary-tree/binary-tree';
 import LongestSubstring from './components/longest-substring/longest-substring';
+import PriorityQueue from './components/priority-queue/priority-queue';
 
 // const decrement = (fn: Function) => (x: number) => fn(x);
 function decrement(fn: Function) {
@@ -94,6 +95,7 @@ function App() {
         <div>
           <LongestSubstring />
         </div>
+        <PriorityQueue />
       </div>
         <QueueElement />
         <HashTable />
