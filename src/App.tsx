@@ -8,6 +8,7 @@ import HashTable from './components/hash-table/hash-table';
 import BinaryTree from './components/binary-tree/binary-tree';
 import LongestSubstring from './components/longest-substring/longest-substring';
 import PriorityQueue from './components/priority-queue/priority-queue';
+import Bfs from './components/bfs/bfs';
 
 // const decrement = (fn: Function) => (x: number) => fn(x);
 function decrement(fn: Function) {
@@ -65,12 +66,7 @@ function App() {
     <div className="App">
       <Stuff text='Blah Blah!' />
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Bfs />
       </div>
       <div style={{display: "flex"}}>
         <div>
